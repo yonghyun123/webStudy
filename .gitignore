@@ -137,4 +137,5 @@ fabric.properties
 # *.ipr
 
 # Sonarlint plugin
-.idea/sonarlint
+.idea/sonarlin
+.recommenders/cachest
