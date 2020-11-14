@@ -15,23 +15,19 @@ public class DataSourceTest {
 		ApplicationContext ac =  new AnnotationConfigApplicationContext(ApplicationConfig.class);
 		DataSource ds = ac.getBean(DataSource.class);
 		
-		Connection conn = null;
-		try{
-			conn = ds.getConnection();
+		try(Connection conn = ds.getConnection()){
 			if(conn != null){
 				System.out.println("접속성공!");
 			}
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
-			if(conn != null){
-				try{
+				try(Connection conn = ds.getConnection()){
 					conn.close();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-			}
 		}
-		
 	}
 }
+
