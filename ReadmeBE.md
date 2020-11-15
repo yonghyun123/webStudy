@@ -49,7 +49,13 @@ bean 클래스 Component 어노테이션을 넣고 의존성 주입이 가능한
 
 
 
-# slack notification 테스트
+
+
+# Spring MVC 흐름도
+
+
+
+![스크린샷 2020-11-15 오후 4.43.50](/Users/yonghyun/Desktop/studyWeb/스크린샷 2020-11-15 오후 4.43.50.png)
 
 
 

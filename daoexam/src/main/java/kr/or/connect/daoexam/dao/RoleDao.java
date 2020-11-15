@@ -23,9 +23,9 @@ import kr.or.connect.daoexam.dto.Role;
 
 @Repository
 public class RoleDao {
-	private NamedParameterJdbcTemplate jdbc;
-	private SimpleJdbcInsert insertAction;
-	private RowMapper<Role> rowMapper = BeanPropertyRowMapper.newInstance(Role.class);
+	final private NamedParameterJdbcTemplate jdbc;
+	final private SimpleJdbcInsert insertAction;
+	final private RowMapper<Role> rowMapper = BeanPropertyRowMapper.newInstance(Role.class);
 
 	public RoleDao(DataSource dataSource) {
 		this.jdbc = new NamedParameterJdbcTemplate(dataSource);
