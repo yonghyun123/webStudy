@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = {"kr.or.connect.webmvc.controller"})
+@ComponentScan(basePackages = {"kr.or.connect.mvcexam.controller"})
 public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter{
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
