@@ -1,5 +1,6 @@
 *.iml
 local.properties
+db_config.properties
 
 # Gradle:
 .idea/**/gradle.xml
