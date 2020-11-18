@@ -16,10 +16,10 @@ import kr.or.connect.guestbook.service.GuestbookService;
 @Service
 public class GuestbookServiceImpl implements GuestbookService{
 	@Autowired
-	GuestbookDao guestbookDao;
+	private GuestbookDao guestbookDao;
 	
 	@Autowired
-	LogDao logDao;
+	private LogDao logDao;
 
 	@Override
 	@Transactional //read only annotation
