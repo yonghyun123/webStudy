@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 @EnableTransactionManagement
 @PropertySource("classpath:db_config.properties")
 
-public class DBconfig implements TransactionManagementConfigurer {
+public class DBConfig implements TransactionManagementConfigurer {
 	
 	@Value("${mysql_driver}")
 	private String driverClassName;
