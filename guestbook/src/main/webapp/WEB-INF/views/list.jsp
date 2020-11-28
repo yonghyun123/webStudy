@@ -11,7 +11,7 @@
 
 	<h1>방명록</h1>
 	<br> 방명록 전체 수 : ${count }
-	<br>
+	<br>방문한 수 : ${cookieCount }
 	<br>
 
 	<c:forEach items="${list}" var="guestbook">
